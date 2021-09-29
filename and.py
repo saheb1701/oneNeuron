@@ -1,5 +1,5 @@
 from utils.model import Perceptron
-from utils.all_utils import prepare_data
+from utils.all_utils import prepare_data , save_plot , save_model
 import pandas as pd
 import numpy as np
 
@@ -13,7 +13,7 @@ AND = {
 
 df = pd.DataFrame(AND)
 
-df
+print(df)
 
 
 
@@ -26,3 +26,5 @@ model = Perceptron(eta=ETA, epochs=EPOCHS)
 model.fit(X, y)
 
 _ = model.total_loss()
+
+save_model()
