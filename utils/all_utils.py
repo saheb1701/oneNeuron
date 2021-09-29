@@ -1,4 +1,4 @@
-import matplotlib.pyplot as pyplot
+import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import joblib # for saving model as binary file
